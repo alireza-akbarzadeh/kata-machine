@@ -2,10 +2,13 @@ type TNode<T> = {
     value: T;
     prev?: TNode<T>;
 };
+// A Stack is a Last-In-First-Out (LIFO) data structure,
+//  similar to a stack of plates.
 
 export default class Stack<T> {
     public length: number;
     private head?: TNode<T>;
+
     constructor() {
         this.length = 0;
         this.head = undefined;
